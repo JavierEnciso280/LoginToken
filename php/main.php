@@ -59,6 +59,7 @@ $data = mysqli_fetch_assoc($consulta);
                             <td class="td"><?= $data['usu_phone']?></td>
                             <td>
                                 <?php
+                                //Éste código lo hice investigando por primera vez, sin usar las librerías para el efecto. A manera de entender mejor el proceso
                                 //Generar Token
                                 $nombreAct = $data['usu_name'];
                                 $vocales = ['a','e','i', 'o', 'u'];
@@ -88,7 +89,7 @@ $data = mysqli_fetch_assoc($consulta);
                 </div>
             </div>
             <!--redireccionar automáticamente al index-->
-            <meta http-equiv="refresh" content="10; url=http://localhost/ProyectosPropios/PruebaTecnicaSkytel/php/">
+            <meta http-equiv="refresh" content="10; url=http://localhost/ProyectosPropios/LoginConToken/php">
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
